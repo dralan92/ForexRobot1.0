@@ -5,7 +5,6 @@ C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\testapp.runtimeco
 C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\testapp.dll
 C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\testapp.pdb
 C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\MT4ServerApi.dll
-C:\Users\user\source\repos\FR1\testapp\obj\Debug\netcoreapp3.0\testapp.csprojAssemblyReference.cache
 C:\Users\user\source\repos\FR1\testapp\obj\Debug\netcoreapp3.0\testapp.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\FR1\testapp\obj\Debug\netcoreapp3.0\testapp.AssemblyInfo.cs
 C:\Users\user\source\repos\FR1\testapp\obj\Debug\netcoreapp3.0\testapp.csproj.CopyComplete
@@ -17,3 +16,4 @@ C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\System.Runtime.Co
 C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\System.Text.Encodings.Web.dll
 C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\System.Text.Json.dll
 C:\Users\user\source\repos\FR1\testapp\bin\Debug\netcoreapp3.0\RestSharp.dll
+C:\Users\user\source\repos\FR1\testapp\obj\Debug\netcoreapp3.0\testapp.csprojAssemblyReference.cache

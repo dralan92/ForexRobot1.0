@@ -43,6 +43,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.4, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            },
             "Telegram.Bot": {
               "target": "Package",
               "version": "[15.5.1, )"

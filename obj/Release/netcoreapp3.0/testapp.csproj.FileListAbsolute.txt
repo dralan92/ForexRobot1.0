@@ -16,3 +16,4 @@ C:\Users\user\source\repos\FR1\testapp\bin\Release\netcoreapp3.0\System.Runtime.
 C:\Users\user\source\repos\FR1\testapp\bin\Release\netcoreapp3.0\System.Text.Encodings.Web.dll
 C:\Users\user\source\repos\FR1\testapp\bin\Release\netcoreapp3.0\System.Text.Json.dll
 C:\Users\user\source\repos\FR1\testapp\obj\Release\netcoreapp3.0\testapp.csprojAssemblyReference.cache
+C:\Users\user\source\repos\FR1\testapp\bin\Release\netcoreapp3.0\RestSharp.dll

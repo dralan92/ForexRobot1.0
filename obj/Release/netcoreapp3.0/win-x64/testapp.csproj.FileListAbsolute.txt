@@ -233,3 +233,4 @@ C:\Users\user\source\repos\FR1\testapp\obj\Release\netcoreapp3.0\win-x64\testapp
 C:\Users\user\source\repos\FR1\testapp\obj\Release\netcoreapp3.0\win-x64\testapp.csproj.CopyComplete
 C:\Users\user\source\repos\FR1\testapp\obj\Release\netcoreapp3.0\win-x64\testapp.dll
 C:\Users\user\source\repos\FR1\testapp\obj\Release\netcoreapp3.0\win-x64\testapp.pdb
+C:\Users\user\source\repos\FR1\testapp\bin\Release\netcoreapp3.0\win-x64\RestSharp.dll

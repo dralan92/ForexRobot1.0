@@ -8,9 +8,19 @@ namespace testapp
 {
     public class OandaRestClient
     {
-       public void PlaceOrder()
+       public void PlaceOrder(List<string> tradeData)
         {
-            var jsonBody = "{\"order\": {\r\n    \"units\": \"1000\",\r\n    \"instrument\": \"AUD_JPY\",\r\n    \"timeInForce\": \"GTC\",\r\n    \"type\": \"LIMIT\",\r\n    \"price\":\"72.25\",\r\n    \"takeProfitOnFill\":{\"price\":\"72.50\"},\r\n    \"stopLossOnFill\" :{\"price\":\"72.10\"},\r\n    \"positionFill\": \"DEFAULT\"\r\n  }\r\n}";
+            string currencyPair = tradeData[0];
+            string takeProfit = tradeData[1];
+            string stopLoss = tradeData[2];
+
+            var jsonBody = "{\"order\": {\r\n    \"units\": \"1000\",\r\n    \"instrument\": \"" +
+               currencyPair +
+                "\",\r\n    \"timeInForce\": \"FOK\",\r\n    \"type\": \"MARKET\",\r\n    \"takeProfitOnFill\":{\"price\":\"" +
+                takeProfit +
+                "\"},\r\n    \"stopLossOnFill\" :{\"price\":\"" +
+                stopLoss +
+                "\"},\r\n    \"positionFill\": \"DEFAULT\"\r\n  }\r\n}";
             var restClient = new RestClient("https://api-fxpractice.oanda.com/v3/accounts/101-002-14835452-002/orders");
             var restRequest = new RestRequest();
             restRequest.Method = RestSharp.Method.POST;
