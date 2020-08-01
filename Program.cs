@@ -104,29 +104,32 @@ namespace testapp
                 if (IsTradeData(FilterMessage(e.Message.Text)))
                 {
                     Console.WriteLine(e.Message.Text);
-                    //var td = ParseTradeMessage(e.Message.Text);
-                    //Console.WriteLine("Trade Message"+td[0]+":"+td[1]+":"+td[2]);
-                    //orc.PlaceOrder(td);
+                    
                     var msg = e.Message.Text;
 
+                    #region GoldCup Internal OrderPlacing
+                    var gctd = new GoldCupMessageParser().ParseGCTradeData(msg);
+                    new GoldCupOrderPlacer().PlaceGoldCupOrder(gctd);
+                    #endregion
 
+                    #region External Api call
+                    //var restClient = new RestClient("https://tradeapi20200720060309.azurewebsites.net/api/goldcup?message=" + msg);
+                    //var restRequest = new RestRequest();
+                    //restRequest.Method = RestSharp.Method.GET;
+                    //var response = restClient.Execute(restRequest);
+                    //HttpStatusCode statusCode = response.StatusCode;
+                    //int numericStatusCode = (int)statusCode;
+                    //Console.WriteLine(numericStatusCode);
+                    //if (numericStatusCode == 200)
+                    //{
+                    //    Console.WriteLine("Message Posted");
+                    //}
+                    //else
+                    //{
+                    //    Console.WriteLine("Message Posting FAILED!!!");
 
-                    var restClient = new RestClient("https://tradeapi20200720060309.azurewebsites.net/api/goldcup?message=" + msg);
-                    var restRequest = new RestRequest();
-                    restRequest.Method = RestSharp.Method.GET;
-                    var response = restClient.Execute(restRequest);
-                    HttpStatusCode statusCode = response.StatusCode;
-                    int numericStatusCode = (int)statusCode;
-                    Console.WriteLine(numericStatusCode);
-                    if (numericStatusCode == 200)
-                    {
-                        Console.WriteLine("Message Posted");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Message Posting FAILED!!!");
-
-                    }
+                    //}
+                    #endregion
 
                 }
                 else
